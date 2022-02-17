@@ -1,3 +1,5 @@
+// How to show Google reviews on a webpage with php using the Google Maps API
+
 <?php
     $url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=[YOUR PLACE ID GOES HERE]=review&key=[YOUR API KEY GOES HERE]";
     $json = file_get_contents($url);
