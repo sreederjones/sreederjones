@@ -1,0 +1,23 @@
+<input class="w3-input w3-margin" id="width" type="text" placeholder="Enter canvas width here:  0.00 inches">
+<input class="w3-input w3-margin" id="height" type="text" placeholder="Enter canvas height here:  0.00 inches">
+
+<div class="w3-row"><button type="button" class="w3-deep-orange w3-large w3-button w3-block w3-mobile" onclick="goldenRatio()">Find My Golden Ratio<br>
+Make a vertical line <span id="goldene">_____</span> inches from either side of your canvas.<br>
+Make a horizontal line <span id="goldeng">______</span> inches from top or bottom edge of your canvas.</button><br></div>
+
+<script>
+function goldenRatio() {
+var w, text;
+var h, text;
+w = document.getElementById("width").value;
+h = document.getElementById("height").value;
+	if (isNaN(w) || w < .125 || w > 5000 && isNaN(h) || h < .125 || h > 5000)  {
+		text = "Please enter a number between .125 and 5000"
+	} else {
+x = w / 1.618;
+	y = h / 1.618;}
+document.getElementById("goldene").innerHTML = x.toFixed(2);
+	document.getElementById("goldeng").innerHTML = y.toFixed(2);
+	document.getElementById().innerHTML = ""
+}
+</script>
